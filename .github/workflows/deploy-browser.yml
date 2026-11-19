@@ -1,0 +1,13 @@
+name: Deploy Browser App
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  marker:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Synthetic manual trigger marker"

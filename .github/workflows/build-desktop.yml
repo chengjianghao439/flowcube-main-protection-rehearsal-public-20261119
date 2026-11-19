@@ -1,0 +1,14 @@
+name: Build Desktop Installer
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Synthetic desktop build validation"
